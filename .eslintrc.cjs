@@ -3,7 +3,8 @@ module.exports = {
     'airbnb',
     'airbnb-typescript',
     'plugin:react-hooks/recommended',
-    'plugin:react/jsx-runtime'
+    'plugin:react/jsx-runtime',
+    'eslint-config-prettier',
   ],
   settings: {
     react: {
