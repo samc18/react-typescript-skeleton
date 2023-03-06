@@ -1,6 +1,3 @@
-
-
-
 # Description
 
 # Pre-requisites
