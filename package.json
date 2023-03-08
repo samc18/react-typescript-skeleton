@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"test/**/.ts\" --fix",
     "format": "prettier --write .",
     "prepare": "husky install"
   },
@@ -36,6 +36,7 @@
     "vite": "^4.1.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*.{ts,tsx}": "eslint --fix",
+    "**/*": "prettier --write"
   }
 }
